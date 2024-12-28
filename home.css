@@ -820,25 +820,30 @@ margin-left: 1.5rem;
     border: none;
     border-radius: 8rem;
 }
-
-
-
 .main-container-page5{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: start;
     margin-top: 2rem;
     padding: 1rem;
     }
     .main-container-page5-data{
      background-color:#354463;
      color: white;
+     width: 90%;
+     padding: 2rem;
      /* padding-top: 4rem; */
      margin-top: -5rem;
      margin-bottom: 1rem;
+     margin-left: 4rem;
      z-index: 3;
     }
-    
+    .main-container-page5-data-img{
+            
+            width: 80%;        
+
+        
+    }
     .main-container-page5-data-p1{
       font-size: 2.3rem;
       margin-bottom: 2rem;
@@ -851,7 +856,7 @@ margin-left: 1.5rem;
     .main-container-page5-button{
     background-color: #C1F7D5;
     border: none;
-    width: 50%;
+    width: 25%;
     padding: 1rem;
     font-size:larger;
     font-weight: bolder;
@@ -859,25 +864,197 @@ margin-left: 1.5rem;
     border-radius: 3rem;
     margin-top: 1rem;
     margin-left: 5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     }
     
     .main-container-page5-data-story{
     color: white;
-    background-color:#354463;
+    /* background-color:#354463; */
     display: flex;
-    align-self: center;
     justify-content: center;
     padding: 1rem;
-    width: 50%;
-    margin: -1.3rem;
+    margin-left: -28rem;
+    width: 30%;
     z-index:2;
     
     }
     
-    
-    
-    
+.main-container-page6{
+    background-color:#354463;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: start;
+    color: white;
+    padding: 2rem;
+}
 
 
+.main-container-page6-title{
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: flood-std;
+    font-size: 3rem;
+}
+
+.main-container-page6-event{
+    background-color: white;
+    color: #354463;
+    width: 25%;
+    padding: 1rem;
+    display: flex;
+  z-index: 2;
+  justify-content: center;
+  margin-bottom: -3rem;
+  margin-left: 5rem;
+    align-self:center;
+}
+
+.main-container-page6-latest{
+    background-color: white;
+    color: #354463;
+    width: 25%;
+    padding: 1rem;
+    display: flex;
+  z-index: 2;
+  justify-content: center;
+  margin-bottom: -3rem;
+  margin-left: 2rem;
+    align-self:flex-start;
+}
+
+
+ .main-container-page6-review1-img,.main-container-page6-review2-img{
+        margin-left: 2rem;   
+    padding-bottom: 20rem;
+        width: auto;    
+}
+.main-container-page6-review2-img{
+    margin-right: 2.3rem;
+}
+.main-container-page6-review1-title{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    font-size: 3rem;
+}
+
+.main-container-page6-review2-title{
+    margin-top: 4rem;
+    padding-left:2rem ;
+    font-size: 3rem;
+}
+
+.main-container-page6-review1-para,.main-container-page6-review2-para{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-left:2rem ;
+    font-size: 1.8rem;
+}
+
+
+.main-container-page6-review1-button,.main-container-page6-review2-button{
+    background-color: #C1F7D5;
+    border: none;
+    width: 50%;
+    padding: 1rem;
+    /* padding-left: 2rem; */
+    font-size:larger;
+    font-weight: bolder;
+    color: #354463;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+}
+.main-container-page6-review1{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.main-container-page6-review2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main-container-page7{
+    background-color:#C1F7D5;
+    padding: 1.5rem;
+}
+
+.main-container-page7-title{
+    font-size: 1.8rem;
+    color: #354463;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-right:10rem ;
+}
+.main-container-page7-box{
+    margin-bottom:1.8rem ;
+}
+
+.main-container-page7-box-input{
+   padding: 1rem;
+   font-size: 1rem;
+   color: #354463;
+   border: none;
+   width: 65%;
+   border-radius: 1.5rem;
+}
+
+.main-container-page7-box-button{
+    background-color: #354463;
+    color: #C1F7D5;
+    padding: 1rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    width: 25%;
+    font-weight: bold;
+}
+
+
+
+
+.footer{
+    margin-top: 3rem;
+    padding: 1.5rem;
+    display: gird;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;
+    color: #354463;
+}
+
+
+.footer-title{
+font-size: 1.5rem;
+}
+
+.footer-address-title{
+    margin-bottom: 0.3rem;
+}
+.footer-social,.footer-learnmore{
+    list-style: none;
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.5rem; 
+}
+.footer-end{
+    display: flex;
+   
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    color: #354463;
+    text-align: end;
+    padding: 2rem;
+    font-family: flood-std;
+}
+
+
+}
+
+@media screen and (min-width: 90rem){
+    
 }
