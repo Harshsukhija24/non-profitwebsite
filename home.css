@@ -1,12 +1,15 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family:  Helvetica, sans-serif;
-}
-body{
-    width: 100%;
-}
+@media (max-width: 480px) {
+
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family:  Helvetica, sans-serif;
+    }
+    body{
+        width: 100%;
+    }
 
 .nav-bar-1{
     margin-top: 2rem;
@@ -486,7 +489,8 @@ font-size: 1.5rem;
     font-family: flood-std;
 }
 
-@media screen and (min-width: 30rem) {
+}
+@media (min-width: 481px) and (max-width: 1024px) {
     body {
         width: 100%;
     }
@@ -1055,6 +1059,437 @@ font-size: 1.5rem;
 
 }
 
-@media screen and (min-width: 90rem){
+@media (min-width: 1025px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family:  Helvetica, sans-serif;
+    }
+    body{
+        width: 100%;
+    }
     
+    .nav-bar-1{
+
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        /* justify-items: space-between; */
+    }
+    .nav-sidebar{
+        display: flex;
+        /* padding:2rem; */
+        justify-content: flex-end;
+        margin-left: 4rem;
+        gap: 8rem;
+        margin-left: 10rem;
+        flex-direction: row;
+    }
+    #nav-sidebar-id1,#nav-sidebar-id2,#nav-sidebar-id3
+    {
+        margin-top: 1.4rem;
+        margin-bottom: 0.7rem;
+        row-gap: 3rem;
+
+        text-decoration: none;
+        font-weight:light;
+        color:#354463;
+    }
+    #nav-title{
+        margin-top: -1rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        color:#354463;
+        margin-left: 1rem;
+        font-weight: bolder;
+        /* background-color: bisque; */
+    }
+    .nav-button{
+        background-color: #c1f7d5;
+        font-weight:bolder;
+        font-size: large;
+        border: none;
+        color: #354463;
+        width: 10%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        margin-right: 10rem;
+        margin-bottom: 1.5rem;
+        border-radius:9rem ;
+        display: flex;
+        justify-content:center;
+    }
+.main-container-page1{
+        display: flex;
+        /* flex-direction: column; */
+        flex-direction: row-reverse;
+        background-image:url("./allimages/annie-spratt-135307-unsplash.png");
+        background-position:center ;
+        background-repeat: no-repeat;
+         background-size: cover; 
+        padding: 6rem;
+        justify-content: center; /* Centers horizontally */
+        align-items: center; /* Centers vertically */
+    }
+  #main-container-page1-issue{
+        color:white;
+        background-color: #354463;
+        border: 2px;
+        width: 40%;
+        display: flex;
+        margin-top: -5rem;
+        margin-left: -16rem;
+        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    #main-container-page1-text{
+    font-family: flood-std;
+    color: white;
+    margin-right:6rem;
+    font-size: 9rem;
+    text-align: end; /* Centers the text within the element */
+    
+    }
+    .main-container-page1-box1{
+        background-color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        width: 100%;
+        padding: 3rem;
+        text-align: center;
+        margin-top: -3rem;
+       
+        
+    }
+    #main-container-page1-para{
+        margin-top: 1rem;
+        color: #354463;
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+        text-align: start;
+       
+
+    }
+    
+    #main-container-page1-link{
+    color: #354463;
+    display: flex;
+    justify-items: center;
+    align-self: center;
+    padding-left: 3rem;
+    }
+
+    .main-container-page2{
+        background-color: #C1F7D5;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #main-container-page2-takeaction{
+        color:white;
+        background-color: #354463;
+        border: 2px;
+        width: 25%;
+        text-align: center;
+        margin-top: -4.5rem;
+        padding: 1rem;
+    }
+    .main-container-page2-list{
+    list-style: none;
+    display: flex;
+    color: #354463;
+    margin-top: 3rem;
+    gap: 1.5rem;
+    column-gap: 2rem;
+    }
+    .main-container-page2-list h3 {
+        font-size: 2rem; 
+    
+    }
+    .main-container-page2-list li {
+        font-size: 1.2rem; 
+     }
+
+
+ .main-container-page3{
+        color: white;
+        display: flex;
+        /* padding: 2rem; */
+        text-align: start;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* justify-items: center; */
+        background-color:#354463
+    }
+    .main-container-page3-div1{
+    /* justify-items: center; */
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    }
+    
+    
+    .main-container-page3-div1-button{
+        padding: 0.8rem;
+        width: 20%;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    #main-container-page3-div1-p1{
+        font-size:2.8rem;
+        font-weight: bold;
+        text-align: start;
+        padding-left: 1rem;
+        margin-bottom: 8rem;
+    }
+    
+    
+    .main-container-page3-treePlanting,.main-container-page3-education,.main-container-page3-advocacy{
+        background-color: white;
+        color: black;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6rem;
+    }
+    .main-container-page3-education-title,.main-container-page3-treePlanting-title,.main-container-page3-advocacy-title{
+        font-size: 3rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 3rem;
+        padding-left: 2rem;
+
+        margin-right: 1rem;
+        text-align: start;
+    }
+    
+    #main-container-page3-treePlanting-button,#main-container-page3-education-button,#main-container-page3-advocacy-button{
+       background-color: #C1F7D5;
+       color: #354463;
+       font-weight:bolder;
+       width: 50%;
+       padding: 1rem;
+       text-align: center;
+       border-radius: 2rem;
+       margin-top: 1rem;
+       margin-right: 3rem;
+       margin-bottom: 4rem;
+       border: none;
+       font-size:1rem;
+       justify-self: end;
+       /* align-self: end; */
+    }
+
+
+    .main-container-page3-treePlanting-image,.main-container-page3-education-image,.main-container-page3-advocacy-image{
+    margin-top: -1.3rem;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+    }
+    .main-container-page3-treePlanting-p1,.main-container-page3-education-p1,.main-container-page3-advocacy-p1{
+       margin-top: -3rem;
+       text-align: start;
+       font-size: 1.3rem;
+       padding-bottom: 1rem;
+       padding-right: 4rem;
+       margin-bottom: 1.5rem;
+    }
+    .main-container-page3-all{
+        display: flex;
+        gap: 3rem;
+    }
+    .main-container-page3-treePlanting-data{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 2rem;
+    }
+
+    .main-container-page5{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        flex-direction: column;
+        text-align: center;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        padding: 1rem;
+        }
+        .main-container-page5-data{
+         background-color:#354463;
+         color: white;
+         margin-top: 2rem;
+         margin-left: 6rem;
+         margin-bottom: 1rem;
+         grid-column: 1/2;
+        grid-row: 1/2;
+        }
+        
+        .main-container-page5-data-p1{
+          font-size: 2.3rem;
+          margin-bottom: 2rem;  
+        }
+        
+        .main-container-page5-data-p2{
+        margin-bottom: 2rem;
+        }
+        
+        .main-container-page5-button{
+        background-color: #C1F7D5;
+        border: none;
+      
+        font-size:larger;
+        font-weight: bolder;
+        color: #354463;
+        margin-left: 6rem;
+        grid-column: 1/2;
+        grid-row: 2/2;
+        }
+        
+        .main-container-page5-data-story{
+        color: white;
+        background-color:#041b49;
+        margin-top:-33rem ;
+        margin-left: 3rem;
+        padding: 1rem;
+        width: 25%;
+        /* margin: -1.3rem; */
+        z-index:2;
+        grid-column: 2/2;
+        grid-row: 1/2;
+        }
+        
+        .main-container-page5-data-img{
+            width: 80%;
+            margin-top: -30rem;
+        }
+        
+.main-container-page6{
+    background-color:#354463;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: start;
+    color: white;
+    padding: 2rem;
+}
+
+
+.main-container-page6-title{
+    padding-left: 3rem;
+    padding-right: 35rem;
+    margin-top: 2rem;
+    font-family: flood-std;
+    font-size: 4rem;
+}
+
+.main-container-page6-event,.main-container-page6-latest{
+    background-color: white;
+    color: #354463;
+    width: 13%;
+margin-left: 11rem;
+    padding: 1rem;
+    display: flex;
+  z-index: 2;
+  justify-content: center;
+  margin-bottom: -3em;
+    align-self:center;
+}
+
+.main-container-page6-latest{
+    /* margin-left: -0rem; */
+    margin-right: 83rem;
+}
+ .main-container-page6-review1-img,.main-container-page6-review2-img{
+    width: 100%;
+    /* object-fit:cover; */
+}
+.main-container-page6-review1-title,.main-container-page6-review2-title{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 6rem;
+}
+/* 
+.main-container-page6-review2-title{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+} */
+
+.main-container-page6-review1-para,.main-container-page6-review2-para{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-container-page6-review1-button,.main-container-page6-review2-button{
+    background-color: #C1F7D5;
+    border: none;
+    width: 25%;
+    padding: 1rem;
+    font-size:larger;
+    font-weight: bolder;
+    color: #354463;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+}
+       
+.main-container-page6-review1-data{
+    margin-left: 3rem;
+}
+
+.main-container-page7{
+    display: flex;
+    background-color:#C1F7D5;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.main-container-page7-title{
+    font-size: 2.2rem;
+    color: #354463;
+    padding-top: 1rem;
+    /* margin-right: 10rem; */
+    padding-bottom: 2rem;
+}
+.main-container-page7-box{
+    display: flex;
+    /* width: 2rem; */
+    /* justify-content: space-between; */
+    margin-bottom:1.8rem ;
+}
+
+.main-container-page7-box-input{
+   /* padding: 1rem; */
+   width: 30%;
+   font-size: 1rem;
+   color: #354463;
+   border: none;
+   border-radius: 1.5rem;
+}
+
+.main-container-page7-box-button{
+    background-color: #354463;
+    color: #C1F7D5;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+
 }

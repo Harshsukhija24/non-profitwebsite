@@ -11,11 +11,9 @@ body{
 .nav-bar-1{
     margin-top: 2rem;
     display: flex;
-    /* flex-wrap: wrap; */
 }
 .nav-sidebar{
     display: flex;
-    /* padding:2rem; */
     justify-content: flex-end;
     margin-left: 4rem;
     flex-direction: column;
@@ -52,4 +50,280 @@ body{
     justify-content:center;
     align-items: center;
     align-self: center;
+}
+.aboutus-page1{
+    background-image: url(./allimages/annie-spratt-135307-unsplash.png);
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(1,1fr);
+}
+.aboutus-page1-title{
+    color: white;
+    font-family:flood-std;
+    font-size: 4rem;
+}
+.aboutus-page1-data{
+    margin-top: 2rem;
+    background-color: white;
+}
+.aboutus-page1-data-title{
+    background-color: #354463;
+    width: 55%;
+    text-align: center;
+    z-index: 4;
+    margin-left: 5rem;
+    margin-top: -1rem;
+    color: white;
+    padding: 1rem;
+}
+
+.aboutus-page1-data-para{
+    color: #354463;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.aboutus-page2{
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+    background-color: #354463;
+    color: white;
+}
+
+.aboutus-page2-title{
+ background-color: white;
+ color: #354463;
+ width: 50%;
+ text-align: center;
+ justify-self: center;
+ padding: 0.7rem;
+}
+.aboutus-page2-para{
+    /* background-color: white; */
+   padding-top: 2rem;
+   font-size: 1.5rem;
+   padding-bottom: 5rem;
+}
+.aboutus-page2-list{
+  text-align: start;
+ padding: 1rem;
+  list-style: none;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   column-gap:1rem;
+}
+.aboutus-page2-list-title{
+margin-bottom: 1rem;
+margin-top: 1rem;
+}
+.aboutus-page3{
+    padding: 1rem;
+    text-align:center;
+}
+.aboutus-page3-list{
+    list-style:none;
+    display: grid;
+    gap: 1rem;
+    /* background-color: #354463; */
+padding: 2rem;
+    text-align: start;
+    grid-template-columns: repeat(2,1fr);
+}
+.aboutus-page3-list  li p {
+    color: white;
+    padding: 0.2rem;
+    width: 96%;
+    margin-top: -0.5rem;
+    font-size: 1.1rem;
+    background-color: #354463;
+}
+.aboutus-page3-title{
+    font-size:1.5rem ;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+
+.aboutus-page3-para{
+    font-weight: light;
+    margin-bottom: 1rem;
+}
+
+.aboutus-page4{
+    background-image: url('/allimages/ian-macharia-509884-unsplash.png');
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    opacity: 1; /* 100% visible */
+   background-color: #354463;  
+opacity: 100%;
+text-align: center;
+padding: 1rem;
+color: white;
+
+}
+
+.aboutus-page4-name{
+color: #354463;
+background-color: white;
+width: 60%;
+text-align: center;
+margin-left: 5rem;
+margin-bottom: 1rem;
+padding: 1rem;
+/* margin-top: -11rem; */
+}
+.aboutus-page4-title{
+    font-size: 1.5rem;
+margin-bottom: 2rem;
+}
+.aboutus-page4-data{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+}
+
+.aboutus-page4-data-review4 h3,.aboutus-page4-data-review1 h3,.aboutus-page4-data-review2 h3,.aboutus-page4-data-review3 h3{
+  font-size: 2rem;
+  font-family: flood-std;
+}
+
+.aboutus-page4-data-review1 p,.aboutus-page4-data-review2 p,.aboutus-page4-data-review3 p,.aboutus-page4-data-review4 p{
+ font-size: 2rem;
+ padding-left: 1rem;
+ padding-right: 1rem;
+}
+
+
+.aboutus-page5{
+    background-color: #354463;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.aboutus-page5-title{
+    font-family: flood-std;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.aboutus-page5-year{
+    font-weight: bold;
+    background-color: white;
+    color: #354463;
+    width: 50%;
+    padding: 0.7rem;
+    text-align: center;
+    z-index: 3;
+    /* margin-bottom: -1rem; */
+    margin-left: 4.3rem;
+}
+
+.aboutus-page5-img{
+margin-top: 1rem;
+
+}
+
+.aboutus-page5-box{
+    background-color: white;
+    color: #354463;
+    padding: 2rem;
+    /* font-size: 1.2rem; */
+    /* padding-bottom: 3rem; */
+}
+
+.aboutus-page5-box-title{
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+
+.aboutus-page5-box-para{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.aboutus-page5-box-button{
+    background-color: #C1F7D5;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 60%;
+    font-weight: bold;
+    border-radius: 2rem;
+}
+
+
+
+
+.main-container-page7{
+    background-color:#C1F7D5;
+    padding: 1.5rem;
+}
+
+.main-container-page7-title{
+    font-size: 1.5rem;
+    color: #354463;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.main-container-page7-box{
+    margin-bottom:1.8rem ;
+}
+
+.main-container-page7-box-input{
+   padding: 1rem;
+   font-size: 1rem;
+   color: #354463;
+   border: none;
+   border-radius: 1.5rem;
+}
+
+.main-container-page7-box-button{
+    background-color: #354463;
+    color: #C1F7D5;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+
+
+.footer{
+    margin-top: 3rem;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;
+    color: #354463;
+}
+
+
+.footer-title{
+font-size: 1.5rem;
+}
+
+.footer-address-title{
+    margin-bottom: 0.3rem;
+}
+.footer-social,.footer-learnmore{
+    list-style: none;
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.5rem; 
+}
+.footer-end{
+    display: flex;
+   
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    color: #354463;
+    text-align: end;
+    padding: 2rem;
+    font-family: flood-std;
 }

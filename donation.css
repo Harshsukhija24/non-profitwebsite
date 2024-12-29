@@ -1,0 +1,81 @@
+.donation-title{
+  color: #354463;
+}
+.donation-line{
+ color: white;
+}
+.donation-form{
+  background-image: url(./allimages/annie-spratt-135307-unsplash.png);
+}
+.donation-info-form{
+  color: white;
+}
+.donation-info-payment{
+ color: white;
+}
+.donation-info-detail{
+  color: white;
+}
+.donation-info-button{
+ color: white;
+}
+.donation-info-link{
+ color: white;
+}
+.main-container-page7{
+    background-color:#C1F7D5;
+    padding: 1.5rem;
+}
+.main-container-page7-title{
+    font-size: 1.5rem;
+    color: #354463;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.main-container-page7-box{
+    margin-bottom:1.8rem ;
+}
+.main-container-page7-box-input{
+   padding: 1rem;
+   font-size: 1rem;
+   color: #354463;
+   border: none;
+   border-radius: 1.5rem;
+}
+.main-container-page7-box-button{
+    background-color: #354463;
+    color: #C1F7D5;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    border: none;
+}
+.footer{
+    margin-top: 3rem;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;
+    color: #354463;
+}
+.footer-title{
+    font-size: 1.5rem;
+}
+.footer-address-title{
+    margin-bottom: 0.3rem;
+}
+.footer-social,.footer-learnmore{
+    list-style: none;
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.5rem; 
+}
+.footer-end{
+    display: flex;   
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    color: #354463;
+    text-align: end;
+    padding: 2rem;
+    font-family: flood-std;
+}
