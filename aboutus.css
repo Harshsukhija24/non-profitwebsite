@@ -1,11 +1,5 @@
-:root {
-    --text-color: #354463;
-    --button-background: #C1F7D5;
-    --font: flood-std;
-}
 
 *{
-    margin: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
@@ -13,46 +7,24 @@
     text-decoration: none;
 }
 
+
 body, html{
     width: 100%;
     overflow-x: hidden;
 }
 
-.read-button{
-    font-weight: bold;
-    border-radius: 1.5rem;
-    background-color: var(--button-background);
-    border: none;
-    padding: 1rem 2rem 1rem 2rem;
-    color: var(--text-color);
-}
 
-.bold-heading{
-    background-color: var(--text-color);
-    padding: 0.5rem 1.5rem;
-    color: white;
-    text-align: center;
-}
 
-.white-box{
-    padding: 0.5rem 0.6rem;
-    font-size: 1rem;
-    background-color: white;
-    border: none;
-    color: var(--text-color);
-}
-
-/* Navbar is starting*/
 .navbar{
     display: flex;
     width: 100%;
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
-    color: var(--text-color);
+    color:#354463;
 }
 
-.heading-menu{
+.navbar-heading-menu{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -66,9 +38,9 @@ body, html{
     font-family: sans-serif;
 }
 .nav-heading a{
-    color: var(--text-color);
+    color: #354463;
 }
-.menu-options{
+.navbar-menu-options{
     display: flex;
     width: 40%;
     flex-direction: column;
@@ -77,98 +49,104 @@ body, html{
     font-size: 0.7rem;
     cursor: pointer;
 }
-.menu-options p{
+.navbar-menu-options p{
     margin-bottom: 0.5rem;
 }
 
-.menu-options a{
+.navbar-menu-options a{
     text-decoration: none;
-    color: var(--text-color);
+    color: #354463;
 }
-.donate-button-container{
+.navbar-donate-button-container{
     width: 100%;
     margin: 1rem 10% 5% 10%;
 }
-.donate-button{
+.navbar-donate-button{
     cursor: pointer;
     padding: 0.6rem;
     width: 80%;
     border-radius: 1.5rem;
     border: none;
-    background: var(--button-background);
+    background: #C1F7D5;
     font-weight: bold;
     font-size: 1rem;
-    color: var(--text-color);
+    color: #354463;
 }
-/* Navbar ended*/
 
-/* Issue section start */
 
-.the-issue{
-    background: url('./allimages/annie-spratt-135307-unsplash.png');
+
+.main-page1-the-issue{
+    background: url('./allimages/annie-spratt-427339-unsplash@2x.png');
     padding: 2rem 1rem;
+ background-color: #354463;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.container{
+.main-page1-container{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.issue-heading{
+.main-page1-issue-heading{
     color: white;
     font-size: 2.5rem;
-    font-family: var(--font);
+    font-family: flood-std;
     margin-bottom: 2rem;
 }
 
-.issue-content{
+.main-page1-issue-content{
     display: flex;
     margin-top: 1.5rem;
     flex-direction: column;
     align-items: center;
     background-color: white;
-    color: var(--text-color);
+    color: #354463;
     padding: 0rem 2.5rem 1rem 2.5rem;
     text-align: center;
 }
 
-.issue-content h1{
+.main-page1-issue-content h1{
     font-size: 1.3rem;
 }
 
-.issue-box{
+.main-page1-issue-box{
     margin-top: -1rem;
     margin-bottom: 1rem;
     font-size: 1.1rem;
+    background-color: #354463;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    text-align: center;
 }
 
-/*Issue section completed*/
 
-/* mission section started */
-
-.mission{
-    background-color: var(--text-color);
+.main-page2-mission{
+    background-color: #354463;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem 1rem;
 }
 
-.mission-white-box{
+.main-page2-mission-white-box{
     margin-bottom: 1.5rem;
+    padding: 0.5rem 0.6rem;
+    font-size: 1rem;
+    background-color: white;
+    border: none;
+    color: #354463;
 }
 
-.mission h2{
+.main-page2-mission h2{
     color: white;
     text-align: center;
     font-size: 1.3rem;
 }
 
-.mission-grid-view{
+.main-page2-mission-grid-view{
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: white;
@@ -177,85 +155,90 @@ body, html{
     column-gap: 1.5rem;
 }
 
-.card{
+.main-page2-card{
     display: flex;
     flex-direction: column;
     justify-self: start;
 }
-.icon{
+.main-page2-icon{
     object-fit: cover;
     width: 20%;
 }
-.icon img{
+.main-page2-icon img{
     width: 100%;
 }
 
-.card-heading{
+.main-page2-card-heading{
     margin-bottom: 0.5rem;
 }
 
-.card-para{
+.main-page2-card-para{
     font-size: 0.875rem;
 }
 
-/*mission section end*/
 
-/* team section start */
 
-.team{
+.main-page3-team{
     background-color: white;
     margin: 2rem;
-    color: var(--text-color);
+    color: #354463;
+}
+.main-page3-ourteam{
+padding: 0.5rem 0.6rem;
+width: 50%;
+text-align: center;
+margin-left: 4rem;
+margin-bottom: 1rem;
+font-size: 1rem;
+background-color: #354463;
+border: none;
+color:white;
 }
 
-.team-black-head{
+.main-page3-team-black-head{
     margin-bottom: 1rem;
     margin-left: 20%;
     margin-right: 20%;
 }
 
-.team-heading{
+.main-page3-team-heading{
     text-align: center;
     font-size: 1.375rem;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-.team-content p{
+.main-page3-team-content p{
     font-size: 0.875rem;
     text-align: center;
 }
 
-.team-grid{
+.main-page3-team-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
     row-gap: 1rem;
     margin-top: 2rem;
 }
-.team-card img{
+.main-page3-team-card img{
     width: 100%;
-    /* height: 100%; */
 }
 
-.person-details{
+.main-page3-person-details{
     padding: 0.5rem 0.5rem;
-    background-color: var(--text-color);
+    background-color: #354463;
     color: white;
     margin-top: -0.5rem;
 }
 
-.person-details p{
+.main-page3-person-details p{
     font-size: 0.875rem;
 }
 
-/* team section end */
 
-/* impact section start */
-
-.impact{
+.main-page4-impact{
     background: url('./allimages/ian-macharia-509884-unsplash.png');
-    background-color: var(--text-color);
+    background-color:#354463;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -263,30 +246,35 @@ body, html{
     color: white;
 }
 
-.impact-white-box{
+.main-page4-impact-white-box{
     margin-left: 20%;
     margin-right: 20%;
+    padding: 0.5rem 0.6rem;
+    font-size: 1rem;
+    background-color: white;
+    border: none;
+    color: #354463;
     text-align: center;
 }
 
-.impact h1{
+.main-page4-impact h1{
     margin-top: 2rem;
     text-align: center;
     font-size: 1.375rem;
 }
 
-.impact-grid{
+.main-page4-impact-grid{
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 0.5rem;
 }
 
-.impact-card h1{
-    font-family: var(--font);
+.main-page4-impact-card h1{
+    font-family: flood-std;
     font-size: 2.75rem;
 }
 
-.impact-card h3{
+.main-page4-impact-card h3{
     margin-top: 0.5rem;
     margin-left: 20%;
     margin-right: 20%;
@@ -294,109 +282,140 @@ body, html{
     font-size: 1rem;
 }
 
-/* impaction section completed */
 
-/* action section start */
-
-.take-action{
+.main-page5-take-action{
     padding: 2rem;
     color: white;
-    background-color: var(--text-color);
+    background-color: #354463;
 }
 
-.take-action h1{
-    font-family: var(--font);
+.main-page5-take-action h1{
+    font-family: flood-std;
     font-size: 2.75rem;
-    text-align: center;
+    text-align: center; 
+}
+.main-page5-action{
+    display: flex;
 }
 
-.action-grid{
+.main-page5-action-img {
+    background-color: #C1F7D5;
+    border: none;
+    border-radius: 2rem;
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    margin-top:  2rem;
+
+}
+
+.main-page5-action-grid{
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.action-card{
+.main-page5-action-card{
     display: flex;
     flex-direction: column;
 }
 
-.action-white-box{
+.main-page5-action-white-box{
     position: relative;
     margin-bottom: -1rem;
     text-align: center;
     margin-left: 20%;
+    padding: 0.5rem 0.6rem;
+    font-size: 1rem;
+    background-color: white;
+    border: none;
+    color: #354463;
     margin-right: 20%;
+    padding: 0.5rem 0.6rem;
+    font-size: 1rem;
+    background-color: white;
+    border: none;
+    color: #354463;
 }
+.main-page5-action-button{
+    font-weight: bold;
+    border-radius: 1.5rem;
+    background-color: #C1F7D5;
+    border: none;
+    padding: 1rem 2rem 1rem 2rem;
+    color: #354463;
 
-.action-grid img{
+}
+.main-page5-action-grid img{
     width: 100%;
 }
 
-.action-content{
+.main-page5-action-content{
     background-color: white;
-    color: var(--text-color);
+    color: #354463;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.action-content h2{
+.main-page5-action-content h2{
     text-align: center;
     font-size: 1.375rem;
     margin-bottom: 1rem;
 }
 
-.action-content p{
+.main-page5-action-content p{
     font-size: 1rem;
     text-align: center;
     margin: 0.5rem 1rem 2rem 1rem;
 }
 
-.action-card-2, .action-card-3, .action-card-4{
+.main-page5-action-card-2, .main-page5-action-card-3, .main-page5-action-card-4{
     display: none;
 }
 
-.dots-container{
+.main-page5-dots-container{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    background-color: var(--text-color);
+    background-color:#354463;
     border-radius: 0.5rem; 
     margin-top: 1rem;
 }
 
-.dot{
+.main-page5-dot-2{
     width: 0.8rem; 
     height: 0.8rem;
     background-color: white; 
     border-radius: 50%; 
+}
+
+.main-page5-dot-1{
+    background-color: #354463;
+    width: 0.8rem; 
+    height: 0.8rem;
+    border-radius: 50%; 
     border: 1px solid #aaa; 
 }
 
-.dot-1{
-    background-color: var(--text-color);
-}
 
-/* subscribe section start*/
-
-.subscribe{
+.main-page6-subscribe{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem 0.6rem;
     color: var(--text-color);
-    background-color: var(--button-background);
+    background-color: #C1F7D5;
 }
 
-.subscribe h1{
+.main-page6-subscribe h1{
     font-size: 1.3rem;
     margin-bottom: 1rem;
 }
 
-.subscribe-form{
+.main-page6-subscribe-form{
     display: flex;
     flex-direction: row;
     align-self: start;
@@ -405,7 +424,7 @@ body, html{
     gap: 1rem;
 }
 
-.email-input{
+.main-page6-email-input{
     flex: 1; 
     border-radius: 2rem;
     padding: 1rem;
@@ -413,9 +432,9 @@ body, html{
     width: 100%; 
     box-sizing: border-box;
 }
-.subscribe-button{
-    background-color: var(--text-color);
-    color: var(--button-background);
+.main-page6-subscribe-button{
+    background-color:#354463;
+    color: #C1F7D5;
     border-radius: 2rem;
     padding: 0.5rem 1.5rem;
     border: none;
@@ -423,67 +442,68 @@ body, html{
     white-space: nowrap; 
 }
 
-/*Subscribe section ended*/
 
-/*Footer is started*/
 
-.footer{
+.footer-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
     row-gap: 4em;
     padding: 1rem;
-    color: var(--text-color);
+    color: #354463;
     margin-top: 2rem;
 }
 
-.footer h2{
+.footer-main h2 {
     font-size: 1.5rem;
     justify-content: center;
 }
 
-.list{
+.footer-list {
     font-size: 0.8rem;
 }
 
-.list ul{
+.footer-list ul {
     margin-bottom: 0.3rem;
 }
 
-.list ul:last-child{
+.footer-list ul:last-child {
     margin-bottom: 0rem;
 }
-.list ul:first-child{
+
+.footer-list ul:first-child {
     margin-bottom: 0.7rem;
 }
 
-.decoration ul{
+.footer-decoration ul {
     text-decoration: underline;
 }
-.decoration ul:first-child{
+
+.footer-decoration ul:first-child {
     text-decoration: none;
 }
 
-.footer h1{
+.footer-main h1 {
     font-family: flood-std;
     grid-column: 2/3;
     font-size: 2.5rem;
     margin-top: -1rem;
 }
 
-.contact, .learn-footer{
+.footer-contact, .footer-learn-footer {
     margin-left: 10%;
 }
 
 
-@media screen and (min-width: 29rem) {
+
+@media screen and (min-width: 30rem) {
     .navbar{
         flex-direction: row;
         align-items: center;
         width: 100%;
         padding: 1rem;
     }
-    .heading-menu{
+    .navbar-heading-menu{
         flex-direction: column;
         width: 70%;
         align-items: start;
@@ -494,112 +514,113 @@ body, html{
         padding: 0.8rem 0 0 0 ;
 
     }
-    .menu-options{
+    .navbar-menu-options{
         flex-direction: row;
         justify-content: start;
         align-items: center;
         padding: 0;
         width: 100%;
     }
-    .menu-options p{
+    .navbar-menu-options p{
         margin-right: 1rem;
         margin-top: 0.5rem;
     }
-    .donate-button-container{
+    .navbar-donate-button-container{
         width: 30%;
         margin: 0 0.5rem 0 0;
     }
-    .donate-button{
+    .navbar-donate-button{
         width: 100%;
     }
 
-    /* Navbar ended*/
     
-    /* Issue section start */
 
-    .container{
+    .main-page1-container{
         padding: 1rem;
     }
-    .issue-heading{
+    .main-page1-issue-heading{
         font-size: 3rem;
     }
 
-    .issue-content{
+    .main-page1-issue-content{
         padding-bottom: 2rem;
     }
 
-    .issue-content h1{
+    .main-page1-issue-content h1{
         font-size: 2rem;
         text-align: start;
     }
 
-    .issue-box{
+    .main-page1-issue-box{
         margin-left: -70%;
     }
 
-/*Issue section completed*/
 
-/* mission section started */
 
-    .mission{
+    .main-page2-mission{
         padding: 2rem 3rem;
     }
+    
 
-    .mission-white-box{
+    .main-page2-mission-white-box{
         margin-left: -25%;
         margin-right: 50%;
     }
 
-    .mission h2{
+    .main-page2-mission h2{
         font-size: 1.75rem;
         text-align: left;
     }
 
-    .mission-grid-view{
+    .main-page2-mission-grid-view{
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .card-heading{
+    .main-page2-card-heading{
         font-size: 1.375rem;
     }
 
-/*mission section end*/
 
-/* team section start */
 
-    .team-grid{
+    .main-page3-team-grid{
         row-gap: 2rem;
         column-gap: 2rem;
     }
-    .team-black-head{
+    .main-page3-ourteam{
+        width: 20%;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        }
+    .main-page3-team-black-head{
         margin-right: 68%;
         margin-left: 3%;
     }
-    .team-content{
+    .main-page3-team-content{
         display: flex;
         flex-direction: row;
         width: 100%;
         align-items: center;
     }
 
-    .team-heading{
+    .main-page3-team-heading{
         text-align: start;
         font-size: 2.25rem;
         width: 100%;
         padding: 1rem;
     }
 
-    .team-content p{
+    .main-page3-team-content p{
         font-size: 1.1rem;
         text-align: start;
         width: 80%;
     }
 
-    .team-card img{
+    .main-page3-team-card img{
         height: 100%;
     }
 
-    .person-details{
+    .main-page3-person-details{
         position: relative;
         margin-top: -1.5rem;
         margin-right: -5%;
@@ -608,91 +629,85 @@ body, html{
         text-align: left;
     }
 
-/* team section end */
 
-/* impact section start */
-
-    .impact-white-box{
+    .main-page4-impact-white-box{
         margin-left: 30%;
         margin-right: 30%;
     }
-    .impact h1{
+    .main-page4-impact h1{
         font-size: 2.25rem;
     }
-    .impact-grid{
+    .main-page4-impact-grid{
         grid-template-columns: 1fr 1fr;
     }
-    .impact-card h1{
+    .main-page4-impact-card h1{
         font-size: 4.5rem;
     }
 
-    .impact-card h3{
+    .main-page4-impact-card h3{
         font-size: 1.375rem;
     }
 
 
-/* impaction section completed */
 
-/* action section start */
 
-    .take-action h1{
+    .main-page5-take-action h1{
         text-align: left;
         width: 80%;
     }
 
-    .action-grid{
+    .main-page5-action-grid{
         grid-template-columns: 1fr 1fr;
         column-gap: 1rem;
     }
 
-    .action-card-2{
+    .main-page5-action-card-2{
         display: flex;
     }
 
-    .dots-container{
+    .main-page5-dots-container{
         display: none;
     }
 
-    /* subscribe section start*/
 
-    .subscribe{
+    .main-page6-subscribe{
         padding: 3.5rem;
     }
 
-    .email-input{
+    .main-page6-email-input{
         width: 70%;
     }
 
-    .subscribe-button{
+    .main-page6-subscribe-button{
         width: 30%;
     }
 
 
-/*Subscribe section ended*/
 
-/*Footer is started*/
 
-    .footer{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+.footer-main {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
-    .learn-footer{
-        grid-column: 2/3;
-    }
-    .footer h1{
-        grid-column: 3/4;
-    }
+.footer-learn-footer {
+    grid-column: 2/3;
+}
+
+.footer-main h1 {
+    grid-column: 3/4;
+}
 
 }
 
+ 
 
-@media screen and (min-width: 57rem){
+@media screen and (min-width: 60rem){
     .navbar{
         flex-direction: row;
         align-items: center;
         padding: 1rem;
     }
-    .heading-menu{
+    .navbar-heading-menu{
         flex-direction: row;
         align-items: center;
         width: 70%;
@@ -701,28 +716,26 @@ body, html{
         font-size: 0.7rem;
         width: 30%;
     }
-    .menu-options{
+    .navbar-menu-options{
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
         margin-left: 1rem;
         font-size: 0.7rem;
     }
-    .donate-button-container{
+    .navbar-donate-button-container{
         width: 20%;
     }
 
-/* navbar completed*/
 
-/* Issue section start */
 
-    .container{
+    .main-page1-container{
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
 
-    .issue-content{
+    .main-page1-issue-content{
         position: relative;
         width: 50%;
         margin-left: 20%;
@@ -730,129 +743,128 @@ body, html{
     }
 
 
-/*Issue section completed*/
 
-/* mission section started */
 
-    .mission-white-box{
+    .main-page2-mission-white-box{
         margin-left: -32%;
         margin-right: 50%;
     }
 
-    .mission-grid-view{
+    .main-page2-mission-grid-view{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-/*mission section end*/
 
-/* team section start */
 
-    .team-grid{
+    .main-page3-team-grid{
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 1rem;
         row-gap: 1rem;
     }
+    .main-page3-ourteam{
+        width: 15%;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;     
+        }
 
-    .team-card{
+    .main-page3-team-card{
         margin: 10%;
     }
 
-    .team-heading{
+    .main-page3-team-heading{
         font-size: 2.75rem;
         width: 55%;
         margin: 1rem;
     }
-
-    .team-content p{
+    .main-page3-team-content  p{
         font-size: 1.25rem;
         width:40%;
         justify-self: center;
     }
 
-    .person-details p{
+    .main-page3-person-details p{
         font-size: 1.2rem;
     }
 
-/* team section end */
 
-/* impact section start */
 
-    .impact-white-box{
+    .main-page4-impact-white-box{
         margin-left: 35%;
         margin-right: 35%;
     }
-    .impact h1{
+    .main-page4-impact h1{
         font-size: 2.75rem;
         margin-left: 15%;
         margin-right: 15%;
     }
-    .impact-grid{
+    .main-page4-impact-grid{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    .impact-card h1{
+    .main-page4-impact-card h1{
         font-size: 4.5rem;
     }
 
-    .impact-card h3{
+    .main-page4-impact-card h3{
         font-size: 1.75rem;
         margin-left: 10%;
         margin-right: 10%;
     }
 
 
-/* impaction section completed */
 
-/* action section start */
-    .action-heading{
+    .main-page5-action-heading{
         margin-top: 2rem;
     }
-    .action-grid{
+    .main-page5-action-grid{
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .action-card-3{
+    .main-page5-action-card-3{
         display: flex;
+    }
+    .main-page5-action-card-4{
+        display: none;
     }
 
 
-/* subscribe section start*/
 
-    .subscribe{
+    .main-page6-subscribe{
         flex-direction: row;
         justify-content: center;
     }
 
-    .subscribe h1{
+    .main-page6-subscribe h1{
         margin-bottom: 0;
         margin-right: 10%;
     }
 
 
-    /*Subscribe section ended*/
 
-    /*Footer is started*/
+    
 
-    .footer{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
+.footer-main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
 
-    .learn-footer{
-        grid-column: 4/5;
-        margin: 0;
-    }
-    .footer h1{
-        grid-column: 5/6;
-    }
+.footer-learn-footer {
+    grid-column: 4/5;
+    margin: 0;
+}
 
-    .follow{
-        margin-left: 15%;
-    }
+.footer-main h1 {
+    grid-column: 5/6;
+}
 
-    .border-line{
-        font-weight: bold;
-        border-bottom: 2px solid #ccc; 
-        padding-bottom: 5px; 
-        margin-bottom: 10px;
-        display: inline-block;
-    }
+.footer-follow {
+    margin-left: 15%;
+}
+
+.footer-border-line {
+    font-weight: bold;
+    border-bottom: 2px solid #ccc; 
+    padding-bottom: 5px; 
+    margin-bottom: 10px;
+    display: inline-block;
+}
 }

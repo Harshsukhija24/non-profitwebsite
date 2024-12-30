@@ -1,12 +1,71 @@
+*{
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 1rem; 
+}
+body, html{
+    width: 100%;
+    overflow-x: hidden;
+}
 .donation-title{
   color: #354463;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
 }
 .donation-line{
  color: white;
+ font-size: 2.3rem;
+ padding: 1rem;
+ font-family: flood-std;
 }
-.donation-form{
+/* .form-your-info{
+    font-size: 2rem;
+    padding: 3rem;
+} */
+.donation-detail{
   background-image: url(./allimages/annie-spratt-135307-unsplash.png);
+  background-color: #354463;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: 1rem; */
 }
+
+.form-your-info{
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    display: flex;
+}
+
+.donation-form{
+background-color: #354463;
+display: flex;
+flex-direction: column;
+padding: 1rem;
+}
+
+.form-detail{
+    display: flex;
+}
+.label-detail{
+    display: flex;
+    flex-direction: column;
+}
+.donation-info-form input ,.donation-info-payment input {
+    border: none; 
+    border-bottom: 2px solid #C1F7D5;
+    background-color: transparent;
+    width: 50%; 
+}
+.label-detail{
+    display: flex;
+    /* flex-direction: ; */
+}
+
+
 .donation-info-form{
   color: white;
 }
@@ -15,67 +74,240 @@
 }
 .donation-info-detail{
   color: white;
+  font-size: 1.5rem;
+  margin-top: 2rem;
 }
 .donation-info-button{
- color: white;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    background-color: #C1F7D5;
+    border: none;
+    padding: 1rem 2rem ;
+margin: 2rem 0;
+    color:#354463;
+    width:70%;
+    display: flex;
+ justify-content: center;
+    align-self: center;
 }
 .donation-info-link{
- color: white;
+ /* color: white; */
+  color:#C1F7D5;
+  border-bottom: 1px solid #C1F7D5;
+  width: 18%;
+  
 }
-.main-container-page7{
-    background-color:#C1F7D5;
-    padding: 1.5rem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-page6-subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.6rem;
+    color: var(--text-color);
+    background-color: #C1F7D5;
 }
-.main-container-page7-title{
-    font-size: 1.5rem;
-    color: #354463;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+
+.main-page6-subscribe h1{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
-.main-container-page7-box{
-    margin-bottom:1.8rem ;
+
+.main-page6-subscribe-form{
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
 }
-.main-container-page7-box-input{
-   padding: 1rem;
-   font-size: 1rem;
-   color: #354463;
-   border: none;
-   border-radius: 1.5rem;
-}
-.main-container-page7-box-button{
-    background-color: #354463;
-    color: #C1F7D5;
+
+.main-page6-email-input{
+    flex: 1; 
+    border-radius: 2rem;
     padding: 1rem;
-    font-size: 1rem;
-    border-radius: 1.5rem;
     border: none;
+    width: 100%; 
+    box-sizing: border-box;
 }
-.footer{
-    margin-top: 3rem;
-    padding: 1.5rem;
+.main-page6-subscribe-button{
+    background-color:#354463;
+    color: #C1F7D5;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    cursor: pointer; 
+    white-space: nowrap; 
+}
+
+
+
+.footer-main {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 4em;
+    padding: 1rem;
     color: #354463;
+    margin-top: 2rem;
 }
-.footer-title{
+
+.footer-main h2 {
     font-size: 1.5rem;
+    justify-content: center;
 }
-.footer-address-title{
+
+.footer-list {
+    font-size: 0.8rem;
+}
+
+.footer-list ul {
     margin-bottom: 0.3rem;
 }
-.footer-social,.footer-learnmore{
-    list-style: none;
-    display: flex; 
-    flex-direction: column; 
-    gap: 0.5rem; 
+
+.footer-list ul:last-child {
+    margin-bottom: 0rem;
 }
-.footer-end{
-    display: flex;   
-    margin-bottom: 1rem;
-    font-size: 4rem;
-    color: #354463;
-    text-align: end;
-    padding: 2rem;
+
+.footer-list ul:first-child {
+    margin-bottom: 0.7rem;
+}
+
+.footer-decoration ul {
+    text-decoration: underline;
+}
+
+.footer-decoration ul:first-child {
+    text-decoration: none;
+}
+
+.footer-main h1 {
     font-family: flood-std;
+    grid-column: 2/3;
+    font-size: 2.5rem;
+    margin-top: -1rem;
+}
+
+.footer-contact, .footer-learn-footer {
+    margin-left: 10%;
+}
+
+
+
+
+
+@media screen and (min-width:30rem) {
+    
+
+    .main-page6-subscribe{
+        padding: 3.5rem;
+    }
+
+    .main-page6-email-input{
+        width: 70%;
+    }
+
+    .main-page6-subscribe-button{
+        width: 30%;
+    }
+
+
+
+
+.footer-main {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-learn-footer {
+    grid-column: 2/3;
+}
+
+.footer-main h1 {
+    grid-column: 3/4;
+}
+
+}
+
+
+
+@media screen and (min-width: 60rem){
+ 
+    .main-page6-subscribe{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main-page6-subscribe h1{
+        margin-bottom: 0;
+        margin-right: 10%;
+    }
+
+
+
+    
+
+.footer-main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footer-learn-footer {
+    grid-column: 4/5;
+    margin: 0;
+}
+
+.footer-main h1 {
+    grid-column: 5/6;
+}
+
+.footer-follow {
+    margin-left: 15%;
+}
+
+.footer-border-line {
+    font-weight: bold;
+    border-bottom: 2px solid #ccc; 
+    padding-bottom: 5px; 
+    margin-bottom: 10px;
+    display: inline-block;
+}
 }

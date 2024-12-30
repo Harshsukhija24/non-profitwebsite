@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+
+body, html{
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .navbar{
     display: flex;
     font-family: sans-serif;
@@ -385,7 +391,7 @@
     padding: 1rem 2rem 1rem 2rem;
     color:#354463
 }
-.action{
+.main-page6-action{
     display: grid;
     grid-template-columns: 2.5rem 1fr 2.5rem;
     grid-template-rows: 18rem 20rem 20rem 20rem 20rem;
@@ -394,8 +400,9 @@
   }
   
   
-  .action-heading{
+  .main-page6-action-heading{
     grid-column: 2/3;
+    font-family: flood-std;
     grid-row: 1/2;
     align-self: center;
     font-size: 2.5rem;
@@ -410,7 +417,7 @@
     margin-top: 15%;
   }
   
-  .plant-and-event-button{
+  .main-page6-plant-and-event-button{
     grid-column: 2/3;
     grid-row: 2/3;
     background-image: url("./allimages/tree-planting.png");
@@ -424,7 +431,7 @@
     margin-top: 10%;
   }
   
-  .event{
+  .main-page6-event{
     background:  white;
   opacity: 1;
   text-align: center;
@@ -453,7 +460,7 @@
   
   
   
-  .earth-1{
+  .main-page6-earth-1{
   
     grid-column: 2/3;
     grid-row: 3/4;
@@ -469,7 +476,7 @@
     margin-right: 0%;
   }
   
-  .earth-1 h3{
+  .main-page6-earth-1 h3{
     text-align: center;
   font: normal normal bold 22px/28px Helvetica;
   letter-spacing: 0px;
@@ -482,7 +489,7 @@
     margin-right: 0%;
   }
   
-  .earth-1 p{
+  .main-page6-earth-1 p{
     margin-left: 10%;
   margin-left: 1%;
     margin-top: 0%;
@@ -490,7 +497,7 @@
     margin-right: 0%;
   }
   
-  .read-more-earth{
+  .main-page6-read-more-earth{
     grid-column: 2/3;
     grid-row: 3/4;
     padding: 2%;
@@ -516,7 +523,7 @@
     margin-left: 34%;
   }
   
-  .plant-and-latest-news-button{
+  .main-page6-plant-and-latest-news-button{
     grid-column: 2/3;
     grid-row: 4/5;
     background-image: url("./allimages/meeting.png");
@@ -530,7 +537,7 @@
     margin-top: 10%;
   }
   
-  .news-event{
+  .main-page6-news-event{
     background: white;
     opacity: 1;
     text-align: center;
@@ -555,7 +562,7 @@
     text-align: center;
   }
   
-  .earth-2{
+  .main-page6-earth-2{
     grid-column: 2/3;
     text-align: center;
     font: normal normal 300 14px/20px Helvetica;
@@ -571,7 +578,7 @@
     margin-right: 0%;
   }
   
-  .earth-2 h3{
+  .main-page6-earth-2 h3{
     text-align: center;
     font: normal normal bold 22px/28px Helvetica;
     letter-spacing: 0px;
@@ -584,7 +591,7 @@
       margin-right: 0%;
   }
   
-  .earth-2 p{
+  .main-page6-earth-2 p{
     margin-left: 10%;
   margin-left: 1%;
     margin-top: 0%;
@@ -876,26 +883,26 @@
         margin-left: 2%;
         margin-top: 1rem;
     }
-    .action{
+    .main-page6-action{
 
         grid-template-columns: 2.5rem 1fr 1fr 2.5rem;
         grid-template-rows: 18rem 30rem 30rem ;
       
       }
       
-      .action-heading{
+      .main-page6-action-heading{
         grid-column: 2/4;
         grid-row: 1/2;
         align-self: left;
         text-align: left;
       }
       
-      .plant-and-event-button{
+      .main-page6-plant-and-event-button{
         background-repeat: no-repeat;
         max-width: 293px;
       }
       
-      .event{
+      .main-page6-event{
         grid-column: 3/4;
         margin-left: 124%;
         margin-right: -61%;
@@ -904,16 +911,16 @@
       }
       
       
-      .earth-1{
+      .main-page6-earth-1{
           grid-column: 3/4;
         grid-row: 2/3;
         text-align: left;
       }
-      .earth-1 p{
+      .main-page6-earth-1 p{
         line-height: 157%;
         text-align: left;
       }
-      .earth-1 h3{
+      .main-page6-earth-1 h3{
         text-align: left;
         line-height: 150%;
         margin-left: 10%;
@@ -921,7 +928,7 @@
       
       
       
-      .plant-and-latest-news-button{
+      .main-page6-plant-and-latest-news-button{
       grid-column: 3/4;
       grid-row: 3/4;
       background-repeat: no-repeat;
@@ -929,7 +936,7 @@
       }
       
       
-      .news-event{
+      .main-page6-news-event{
         margin-right: 124%;
         margin-left: -61%;
         margin-top: 0%;
@@ -937,13 +944,13 @@
       
       
       
-      .earth-2{
+      .main-page6-earth-2{
         grid-column: 2/3;
       grid-row: 3/4;
       
       }
       
-      .earth-2 p{
+      .mian-page6-earth-2 p{
         line-height: 157%;
         text-align: left;
         margin-left: -5%;
@@ -951,7 +958,7 @@
         margin-bottom: 9%;
         margin-right: 0%;
       }
-      .earth-2 h3{
+      .main-page6-earth-2 h3{
         text-align: left;
         line-height: 150%;
         margin-left: -3%;
@@ -1190,14 +1197,18 @@
     }
 
 
-    .action{
+    .main-page6-action{
 
         grid-template-columns: 2.5rem 1fr 1fr 2.5rem;
         grid-template-rows: 18rem 45rem 45rem ;
       
       }
+      .main-page6-action-heading{
+        font-size: 5rem;
+        margin-bottom: 5rem;
+      }
       
-      .plant-and-event-button {
+      .main-page6-plant-and-event-button {
       grid-column: 2/3;
       grid-row: 2/3;
       /* background-image: url("./allimages/tree-planting.png"); */
@@ -1211,21 +1222,21 @@
       background-repeat: no-repeat;
       margin-top: 0%;
       }
-      .event{
+      .main-page6-event{
         margin-left: 110%;
           margin-right: -37%;
       }
       
-      .earth-1 p{
+      .main-page6-earth-1 p{
         margin-left: 10%;
       }
-      .earth-1{
+      .main-page6-earth-1{
         align-self: left;
         font:normal normal 300 20px/32px Helvetica;
       }
       
       
-      .earth-1 h3{
+      .main-page6-earth-1 h3{
         font: normal normal bold 44px/56px Helvetica;
           line-height: 56px;index
         letter-spacing: 0px;
@@ -1240,7 +1251,7 @@
           line-height: 100%;
           margin-left: 10%;
       }
-      .read-more-earth{
+      .main-page6-read-more-earth{
       transform: translateX(-209%);
       margin-left: 71%;
       border-radius: 3rem;
@@ -1248,7 +1259,7 @@
       
       
       
-      .plant-and-latest-news-button{
+      .main-page6-plant-and-latest-news-button{
       
       background-repeat: no-repeat;
         max-width: 555px;
@@ -1261,27 +1272,27 @@
       margin-top: 0%;
       }
       
-      .news-event{
+      .main-page6-news-event{
         margin-left: 110%;
           margin-right: -37%;
       }
       
-      .plant-and-latest-news-button{
+      .main-page6-plant-and-latest-news-button{
       
       margin-left: 10%;
       
       }
       
-      .earth-2 p{
+      .main-page6-earth-2 p{
         margin-left: 10%;
       }
-      .earth-2{
+      .main-page6-earth-2{
         align-self: left;
         font:normal normal 300 20px/32px Helvetica;
       }
       
       
-      .earth-2 h3{
+      .main-page6-earth-2 h3{
         font: normal normal bold 44px/56px Helvetica;
           line-height: 56px;
         letter-spacing: 0px;
@@ -1296,7 +1307,7 @@
           line-height: 100%;
           margin-left: 10%;
       }
-      .news-event {
+      .main-page6-news-event {
         margin-left: -96%;
         margin-right: 157%;
       }
