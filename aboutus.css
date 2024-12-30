@@ -1,329 +1,858 @@
+:root {
+    --text-color: #354463;
+    --button-background: #C1F7D5;
+    --font: flood-std;
+}
+
 *{
-    padding: 0;
+    margin: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:  Helvetica, sans-serif;
+    list-style: none;
+    font-size: 1rem;
+    text-decoration: none;
 }
-body{
+
+body, html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.read-button{
+    font-weight: bold;
+    border-radius: 1.5rem;
+    background-color: var(--button-background);
+    border: none;
+    padding: 1rem 2rem 1rem 2rem;
+    color: var(--text-color);
+}
+
+.bold-heading{
+    background-color: var(--text-color);
+    padding: 0.5rem 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.white-box{
+    padding: 0.5rem 0.6rem;
+    font-size: 1rem;
+    background-color: white;
+    border: none;
+    color: var(--text-color);
+}
+
+/* Navbar is starting*/
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    color: var(--text-color);
+}
+
+.heading-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-heading{
+    padding: 1.2rem 0.7rem;
+    width: 55%;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+}
+.nav-heading a{
+    color: var(--text-color);
+}
+.menu-options{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+.menu-options p{
+    margin-bottom: 0.5rem;
+}
+
+.menu-options a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.donate-button-container{
+    width: 100%;
+    margin: 1rem 10% 5% 10%;
+}
+.donate-button{
+    cursor: pointer;
+    padding: 0.6rem;
+    width: 80%;
+    border-radius: 1.5rem;
+    border: none;
+    background: var(--button-background);
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+/* Navbar ended*/
+
+/* Issue section start */
+
+.the-issue{
+    background: url('./allimages/annie-spratt-135307-unsplash.png');
+    padding: 2rem 1rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
-.nav-bar-1{
-    margin-top: 2rem;
-    display: flex;
+.issue-heading{
+    color: white;
+    font-size: 2.5rem;
+    font-family: var(--font);
+    margin-bottom: 2rem;
 }
-.nav-sidebar{
+
+.issue-content{
     display: flex;
-    justify-content: flex-end;
-    margin-left: 4rem;
+    margin-top: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: var(--text-color);
+    padding: 0rem 2.5rem 1rem 2.5rem;
+    text-align: center;
+}
+
+.issue-content h1{
+    font-size: 1.3rem;
+}
+
+.issue-box{
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/*Issue section completed*/
+
+/* mission section started */
+
+.mission{
+    background-color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.mission-white-box{
+    margin-bottom: 1.5rem;
+}
+
+.mission h2{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.mission-grid-view{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    margin-top: 3rem;
+    row-gap: 2em;
+    column-gap: 1.5rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+}
+.icon{
+    object-fit: cover;
+    width: 20%;
+}
+.icon img{
+    width: 100%;
+}
+
+.card-heading{
+    margin-bottom: 0.5rem;
+}
+
+.card-para{
+    font-size: 0.875rem;
+}
+
+/*mission section end*/
+
+/* team section start */
+
+.team{
+    background-color: white;
+    margin: 2rem;
+    color: var(--text-color);
+}
+
+.team-black-head{
+    margin-bottom: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.team-heading{
+    text-align: center;
+    font-size: 1.375rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-content p{
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.team-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin-top: 2rem;
+}
+.team-card img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.person-details{
+    padding: 0.5rem 0.5rem;
+    background-color: var(--text-color);
+    color: white;
+    margin-top: -0.5rem;
+}
+
+.person-details p{
+    font-size: 0.875rem;
+}
+
+/* team section end */
+
+/* impact section start */
+
+.impact{
+    background: url('./allimages/ian-macharia-509884-unsplash.png');
+    background-color: var(--text-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 2rem;
+    color: white;
+}
+
+.impact-white-box{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+.impact h1{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.375rem;
+}
+
+.impact-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0.5rem;
+}
+
+.impact-card h1{
+    font-family: var(--font);
+    font-size: 2.75rem;
+}
+
+.impact-card h3{
+    margin-top: 0.5rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* impaction section completed */
+
+/* action section start */
+
+.take-action{
+    padding: 2rem;
+    color: white;
+    background-color: var(--text-color);
+}
+
+.take-action h1{
+    font-family: var(--font);
+    font-size: 2.75rem;
+    text-align: center;
+}
+
+.action-grid{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.action-card{
+    display: flex;
     flex-direction: column;
 }
-#nav-sidebar-id1,#nav-sidebar-id2,#nav-sidebar-id3
-{
-    margin-bottom: 0.7rem;
-    text-decoration: none;
-    font-weight:light;
-    color:#354463;
+
+.action-white-box{
+    position: relative;
+    margin-bottom: -1rem;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
 }
-#nav-title{
-    padding-top: 1rem;
-    padding-left: 1rem;
-    color:#354463;
-    margin-left: 1rem;
-    font-weight: bolder;
-    /* background-color: bisque; */
+
+.action-grid img{
+    width: 100%;
 }
-.nav-button{
-    background-color: #c1f7d5;
-    font-weight:bolder;
-    font-size: large;
-    border: none;
-    color: #354463;
-    width: 20rem;
-    margin-left: 2rem;
-    /* padding-left: 1rem; */
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    height: 3rem;
-    border-radius:9rem ;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    align-self: center;
-}
-.aboutus-page1{
-    background-image: url(./allimages/annie-spratt-135307-unsplash.png);
-    display: grid;
-    padding: 1rem;
-    grid-template-columns: repeat(1,1fr);
-}
-.aboutus-page1-title{
-    color: white;
-    font-family:flood-std;
-    font-size: 4rem;
-}
-.aboutus-page1-data{
-    margin-top: 2rem;
+
+.action-content{
     background-color: white;
-}
-.aboutus-page1-data-title{
-    background-color: #354463;
-    width: 55%;
-    text-align: center;
-    z-index: 4;
-    margin-left: 5rem;
-    margin-top: -1rem;
-    color: white;
+    color: var(--text-color);
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.aboutus-page1-data-para{
-    color: #354463;
-    font-weight: bold;
-    font-size: 2rem;
+.action-content h2{
     text-align: center;
-    padding: 2rem;
-}
-
-.aboutus-page2{
-    display: grid;
-    padding: 1rem;
-    grid-template-columns: repeat(1,1fr);
-    text-align: center;
-    background-color: #354463;
-    color: white;
-}
-
-.aboutus-page2-title{
- background-color: white;
- color: #354463;
- width: 50%;
- text-align: center;
- justify-self: center;
- padding: 0.7rem;
-}
-.aboutus-page2-para{
-    /* background-color: white; */
-   padding-top: 2rem;
-   font-size: 1.5rem;
-   padding-bottom: 5rem;
-}
-.aboutus-page2-list{
-  text-align: start;
- padding: 1rem;
-  list-style: none;
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-   column-gap:1rem;
-}
-.aboutus-page2-list-title{
-margin-bottom: 1rem;
-margin-top: 1rem;
-}
-.aboutus-page3{
-    padding: 1rem;
-    text-align:center;
-}
-.aboutus-page3-list{
-    list-style:none;
-    display: grid;
-    gap: 1rem;
-    /* background-color: #354463; */
-padding: 2rem;
-    text-align: start;
-    grid-template-columns: repeat(2,1fr);
-}
-.aboutus-page3-list  li p {
-    color: white;
-    padding: 0.2rem;
-    width: 96%;
-    margin-top: -0.5rem;
-    font-size: 1.1rem;
-    background-color: #354463;
-}
-.aboutus-page3-title{
-    font-size:1.5rem ;
-    margin: 1rem;
-    font-weight: bold;
-}
-
-
-.aboutus-page3-para{
-    font-weight: light;
+    font-size: 1.375rem;
     margin-bottom: 1rem;
 }
 
-.aboutus-page4{
-    background-image: url('/allimages/ian-macharia-509884-unsplash.png');
-    background-size: cover; /* Ensures the image covers the entire element */
-    background-position: center; /* Centers the image */
-    opacity: 1; /* 100% visible */
-   background-color: #354463;  
-opacity: 100%;
-text-align: center;
-padding: 1rem;
-color: white;
-
-}
-
-.aboutus-page4-name{
-color: #354463;
-background-color: white;
-width: 60%;
-text-align: center;
-margin-left: 5rem;
-margin-bottom: 1rem;
-padding: 1rem;
-/* margin-top: -11rem; */
-}
-.aboutus-page4-title{
-    font-size: 1.5rem;
-margin-bottom: 2rem;
-}
-.aboutus-page4-data{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap: 2rem;
-}
-
-.aboutus-page4-data-review4 h3,.aboutus-page4-data-review1 h3,.aboutus-page4-data-review2 h3,.aboutus-page4-data-review3 h3{
-  font-size: 2rem;
-  font-family: flood-std;
-}
-
-.aboutus-page4-data-review1 p,.aboutus-page4-data-review2 p,.aboutus-page4-data-review3 p,.aboutus-page4-data-review4 p{
- font-size: 2rem;
- padding-left: 1rem;
- padding-right: 1rem;
-}
-
-
-.aboutus-page5{
-    background-color: #354463;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-}
-
-.aboutus-page5-title{
-    font-family: flood-std;
-    font-size: 3rem;
-    margin: 1rem;
-}
-
-.aboutus-page5-year{
-    font-weight: bold;
-    background-color: white;
-    color: #354463;
-    width: 50%;
-    padding: 0.7rem;
-    text-align: center;
-    z-index: 3;
-    /* margin-bottom: -1rem; */
-    margin-left: 4.3rem;
-}
-
-.aboutus-page5-img{
-margin-top: 1rem;
-
-}
-
-.aboutus-page5-box{
-    background-color: white;
-    color: #354463;
-    padding: 2rem;
-    /* font-size: 1.2rem; */
-    /* padding-bottom: 3rem; */
-}
-
-.aboutus-page5-box-title{
-    font-size: 1.4rem;
-    padding-bottom: 1rem;
-}
-
-.aboutus-page5-box-para{
+.action-content p{
     font-size: 1rem;
-    padding-bottom: 1rem;
+    text-align: center;
+    margin: 0.5rem 1rem 2rem 1rem;
 }
 
+.action-card-2, .action-card-3, .action-card-4{
+    display: none;
+}
 
-.aboutus-page5-box-button{
-    background-color: #C1F7D5;
-    border: none;
-    font-size: 1rem;
-    padding: 1rem;
-    width: 60%;
-    font-weight: bold;
+.dots-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--text-color);
+    border-radius: 0.5rem; 
+    margin-top: 1rem;
+}
+
+.dot{
+    width: 0.8rem; 
+    height: 0.8rem;
+    background-color: white; 
+    border-radius: 50%; 
+    border: 1px solid #aaa; 
+}
+
+.dot-1{
+    background-color: var(--text-color);
+}
+
+/* subscribe section start*/
+
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.6rem;
+    color: var(--text-color);
+    background-color: var(--button-background);
+}
+
+.subscribe h1{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.subscribe-form{
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.email-input{
+    flex: 1; 
     border-radius: 2rem;
-}
-
-
-
-
-.main-container-page7{
-    background-color:#C1F7D5;
-    padding: 1.5rem;
-}
-
-.main-container-page7-title{
-    font-size: 1.5rem;
-    color: #354463;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-}
-.main-container-page7-box{
-    margin-bottom:1.8rem ;
-}
-
-.main-container-page7-box-input{
-   padding: 1rem;
-   font-size: 1rem;
-   color: #354463;
-   border: none;
-   border-radius: 1.5rem;
-}
-
-.main-container-page7-box-button{
-    background-color: #354463;
-    color: #C1F7D5;
     padding: 1rem;
-    font-size: 1rem;
-    border-radius: 1.5rem;
     border: none;
+    width: 100%; 
+    box-sizing: border-box;
+}
+.subscribe-button{
+    background-color: var(--text-color);
+    color: var(--button-background);
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    cursor: pointer; 
+    white-space: nowrap; 
 }
 
+/*Subscribe section ended*/
 
+/*Footer is started*/
 
 .footer{
-    margin-top: 3rem;
-    padding: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 4rem;
-    color: #354463;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 4em;
+    padding: 1rem;
+    color: var(--text-color);
+    margin-top: 2rem;
 }
 
-
-.footer-title{
-font-size: 1.5rem;
+.footer h2{
+    font-size: 1.5rem;
+    justify-content: center;
 }
 
-.footer-address-title{
+.list{
+    font-size: 0.8rem;
+}
+
+.list ul{
     margin-bottom: 0.3rem;
 }
-.footer-social,.footer-learnmore{
-    list-style: none;
-    display: flex; 
-    flex-direction: column; 
-    gap: 0.5rem; 
+
+.list ul:last-child{
+    margin-bottom: 0rem;
 }
-.footer-end{
-    display: flex;
-   
-    margin-bottom: 1rem;
-    font-size: 4rem;
-    color: #354463;
-    text-align: end;
-    padding: 2rem;
+.list ul:first-child{
+    margin-bottom: 0.7rem;
+}
+
+.decoration ul{
+    text-decoration: underline;
+}
+.decoration ul:first-child{
+    text-decoration: none;
+}
+
+.footer h1{
     font-family: flood-std;
+    grid-column: 2/3;
+    font-size: 2.5rem;
+    margin-top: -1rem;
+}
+
+.contact, .learn-footer{
+    margin-left: 10%;
+}
+
+
+@media screen and (min-width: 29rem) {
+    .navbar{
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+    }
+    .heading-menu{
+        flex-direction: column;
+        width: 70%;
+        align-items: start;
+        margin-left: 0.5rem;
+    }
+    .nav-heading{
+        width: 100%;
+        padding: 0.8rem 0 0 0 ;
+
+    }
+    .menu-options{
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+    .menu-options p{
+        margin-right: 1rem;
+        margin-top: 0.5rem;
+    }
+    .donate-button-container{
+        width: 30%;
+        margin: 0 0.5rem 0 0;
+    }
+    .donate-button{
+        width: 100%;
+    }
+
+    /* Navbar ended*/
+    
+    /* Issue section start */
+
+    .container{
+        padding: 1rem;
+    }
+    .issue-heading{
+        font-size: 3rem;
+    }
+
+    .issue-content{
+        padding-bottom: 2rem;
+    }
+
+    .issue-content h1{
+        font-size: 2rem;
+        text-align: start;
+    }
+
+    .issue-box{
+        margin-left: -70%;
+    }
+
+/*Issue section completed*/
+
+/* mission section started */
+
+    .mission{
+        padding: 2rem 3rem;
+    }
+
+    .mission-white-box{
+        margin-left: -25%;
+        margin-right: 50%;
+    }
+
+    .mission h2{
+        font-size: 1.75rem;
+        text-align: left;
+    }
+
+    .mission-grid-view{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card-heading{
+        font-size: 1.375rem;
+    }
+
+/*mission section end*/
+
+/* team section start */
+
+    .team-grid{
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+    .team-black-head{
+        margin-right: 68%;
+        margin-left: 3%;
+    }
+    .team-content{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+
+    .team-heading{
+        text-align: start;
+        font-size: 2.25rem;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .team-content p{
+        font-size: 1.1rem;
+        text-align: start;
+        width: 80%;
+    }
+
+    .team-card img{
+        height: 100%;
+    }
+
+    .person-details{
+        position: relative;
+        margin-top: -1.5rem;
+        margin-right: -5%;
+        margin-left: 1rem;
+        padding: 0.5rem;
+        text-align: left;
+    }
+
+/* team section end */
+
+/* impact section start */
+
+    .impact-white-box{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .impact h1{
+        font-size: 2.25rem;
+    }
+    .impact-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .impact-card h1{
+        font-size: 4.5rem;
+    }
+
+    .impact-card h3{
+        font-size: 1.375rem;
+    }
+
+
+/* impaction section completed */
+
+/* action section start */
+
+    .take-action h1{
+        text-align: left;
+        width: 80%;
+    }
+
+    .action-grid{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    .action-card-2{
+        display: flex;
+    }
+
+    .dots-container{
+        display: none;
+    }
+
+    /* subscribe section start*/
+
+    .subscribe{
+        padding: 3.5rem;
+    }
+
+    .email-input{
+        width: 70%;
+    }
+
+    .subscribe-button{
+        width: 30%;
+    }
+
+
+/*Subscribe section ended*/
+
+/*Footer is started*/
+
+    .footer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .learn-footer{
+        grid-column: 2/3;
+    }
+    .footer h1{
+        grid-column: 3/4;
+    }
+
+}
+
+
+@media screen and (min-width: 57rem){
+    .navbar{
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+    }
+    .heading-menu{
+        flex-direction: row;
+        align-items: center;
+        width: 70%;
+    }
+    .nav-heading{
+        font-size: 0.7rem;
+        width: 30%;
+    }
+    .menu-options{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 1rem;
+        font-size: 0.7rem;
+    }
+    .donate-button-container{
+        width: 20%;
+    }
+
+/* navbar completed*/
+
+/* Issue section start */
+
+    .container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .issue-content{
+        position: relative;
+        width: 50%;
+        margin-left: 20%;
+        margin-bottom: -5rem;
+    }
+
+
+/*Issue section completed*/
+
+/* mission section started */
+
+    .mission-white-box{
+        margin-left: -32%;
+        margin-right: 50%;
+    }
+
+    .mission-grid-view{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+/*mission section end*/
+
+/* team section start */
+
+    .team-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+
+    .team-card{
+        margin: 10%;
+    }
+
+    .team-heading{
+        font-size: 2.75rem;
+        width: 55%;
+        margin: 1rem;
+    }
+
+    .team-content p{
+        font-size: 1.25rem;
+        width:40%;
+        justify-self: center;
+    }
+
+    .person-details p{
+        font-size: 1.2rem;
+    }
+
+/* team section end */
+
+/* impact section start */
+
+    .impact-white-box{
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    .impact h1{
+        font-size: 2.75rem;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .impact-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .impact-card h1{
+        font-size: 4.5rem;
+    }
+
+    .impact-card h3{
+        font-size: 1.75rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
+/* impaction section completed */
+
+/* action section start */
+    .action-heading{
+        margin-top: 2rem;
+    }
+    .action-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .action-card-3{
+        display: flex;
+    }
+
+
+/* subscribe section start*/
+
+    .subscribe{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .subscribe h1{
+        margin-bottom: 0;
+        margin-right: 10%;
+    }
+
+
+    /*Subscribe section ended*/
+
+    /*Footer is started*/
+
+    .footer{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .learn-footer{
+        grid-column: 4/5;
+        margin: 0;
+    }
+    .footer h1{
+        grid-column: 5/6;
+    }
+
+    .follow{
+        margin-left: 15%;
+    }
+
+    .border-line{
+        font-weight: bold;
+        border-bottom: 2px solid #ccc; 
+        padding-bottom: 5px; 
+        margin-bottom: 10px;
+        display: inline-block;
+    }
 }
