@@ -497,7 +497,7 @@ body, html{
     margin-right: 0%;
   }
   
-  .main-page6-read-more-earth{
+  .main-page6-read-more-earth,.main-page6-read-more-earth1{
     grid-column: 2/3;
     grid-row: 3/4;
     padding: 2%;
@@ -1228,7 +1228,7 @@ body, html{
       }
       
       .main-page6-earth-1 p{
-        margin-left: 10%;
+        margin-left: 26%;
       }
       .main-page6-earth-1{
         align-self: left;
@@ -1238,7 +1238,7 @@ body, html{
       
       .main-page6-earth-1 h3{
         font: normal normal bold 44px/56px Helvetica;
-          line-height: 56px;index
+          line-height: 56px;
         letter-spacing: 0px;
         color: #FFFFFF;
         opacity: 1;
@@ -1247,14 +1247,18 @@ body, html{
         margin-top: -14%;
         margin-bottom: 9%;
         margin-right: 0%;
-        text-align: left;
+        text-align: center;
           line-height: 100%;
           margin-left: 10%;
       }
       .main-page6-read-more-earth{
-      transform: translateX(-209%);
-      margin-left: 71%;
+      margin-left: 10rem;
+      margin-right: 12rem;
       border-radius: 3rem;
+      }
+      .main-page6-read-more-earth1{
+          margin-left: 5rem;
+          margin-right: 8rem;
       }
       
       
@@ -1307,9 +1311,11 @@ body, html{
           line-height: 100%;
           margin-left: 10%;
       }
-      .main-page6-news-event {
-        margin-left: -96%;
-        margin-right: 157%;
+    
+        .main-page6-news-event {
+          margin-left: -27rem;
+          margin-right: 59rem;
+          padding-right: 8rem;
       }
 
 .main-page7-subscribe{

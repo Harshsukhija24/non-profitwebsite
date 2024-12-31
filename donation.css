@@ -16,10 +16,11 @@ body, html{
   text-align: center;
 }
 .donation-line{
- color: white;
- font-size: 2.3rem;
- padding: 1rem;
- font-family: flood-std;
+    color: white;
+    font-size: 4rem;
+    padding: 1rem;
+    font-family: flood-std;
+    text-align: center;
 }
 /* .form-your-info{
     font-size: 2rem;
@@ -30,7 +31,11 @@ body, html{
   background-color: #354463;
   background-repeat: no-repeat;
   background-size: cover;
-  /* margin: 1rem; */
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 5rem;
+
+  justify-content: center;
 }
 
 .form-your-info{
@@ -44,7 +49,11 @@ body, html{
 background-color: #354463;
 display: flex;
 flex-direction: column;
-padding: 1rem;
+width:80%;
+/* text-align: center; */
+/* align-items: center; */
+align-self: center;
+padding: 2rem;
 }
 
 .form-detail{
@@ -54,15 +63,20 @@ padding: 1rem;
     display: flex;
     flex-direction: column;
 }
+
+
+
 .donation-info-form input ,.donation-info-payment input {
     border: none; 
     border-bottom: 2px solid #C1F7D5;
+outline: none;
+color: white;
     background-color: transparent;
-    width: 50%; 
+    /* width: 50%;  */
 }
-.label-detail{
+.label-detail1{
     display: flex;
-    /* flex-direction: ; */
+/* justify-content: space-between; */
 }
 
 
@@ -93,23 +107,126 @@ margin: 2rem 0;
 .donation-info-link{
  /* color: white; */
   color:#C1F7D5;
-  border-bottom: 1px solid #C1F7D5;
-  width: 18%;
+  text-decoration: underline;
+  /* border-bottom: 1px solid #C1F7D5; */
+  /* width: 15%;/ */
   
 }
 
+.form-firstName input{
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    width: 80%;
+}
+.form-secondName input{
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    width: 80%;
+}
+
+.form-streetaddress input{
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    width: 90%;
+}
+
+.form-city input{
+margin-bottom:1rem ;
+margin-top: 0.5rem;
+width: 80%;
+}
+.form-state label{
+    margin-left:3rem ;
+
+}
+.form-state input{
+    margin-top: 0.5rem;
+    margin-bottom: 1 rem;
+    margin-left:3rem ;
+    width: 40%;
+
+}
+
+.form-zipcode input{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 55%;
+}
+
+.form-email input{
+    margin-top: 0.5rem;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.form-zipcode input::placeholder{
+    color: #d3d3d3;
+
+}
+
+.form-firstName input::placeholder{
+    color: #d3d3d3;
+}
+
+.form-secondName input::placeholder{
+    color: #d3d3d3;
+}
+
+.form-streetaddress input::placeholder{
+    color:#d3d3d3;
+}
+
+.form-city input::placeholder{
+    color: #d3d3d3;
+}
 
 
+.form-state input::placeholder{
+    color: #d3d3d3;
+}
+
+.form-email input::placeholder{
+    color: #d3d3d3;
+}
+
+.form-creditcard{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-creditcard input{
+margin-bottom: 1rem;
+margin-top: 0.5rem;
+width: 90%;
+
+}
+.form-creditcard input::placeholder{
+    color:#d3d3d3;
+
+}
+
+.form-expiration input{
+    width: 25%;
+margin-top: 0.5rem; 
+margin-right: 2rem;   
+}
+.form-expiration input:last-child{
+    margin-right: 0;
+}
+.form-expiration input::placeholder{
+    color:#d3d3d3;
+}
 
 
+.form-security input{
+    margin-top: 0.5rem;
+    width: 40%;
+    margin-right: 10rem;
+}
 
-
-
-
-
-
-
-
+.form-security input::placeholder{
+    color: #d3d3d3;
+}
 
 
 
@@ -238,6 +355,24 @@ margin: 2rem 0;
 
 @media screen and (min-width:30rem) {
     
+    .button-detail{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .donation-info-button{
+   /* display: flex; */
+        padding: 1rem 2rem ; 
+     margin: 2rem 0;
+    justify-content: center;
+
+        width:45%;
+    }
+    .donation-info-link{
+    align-self: center;
+     
+
+    }
 
     .main-page6-subscribe{
         padding: 3.5rem;
@@ -272,6 +407,31 @@ margin: 2rem 0;
 
 @media screen and (min-width: 60rem){
  
+    .donation-detail{    
+      display: flex;
+      flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+    .button-detail{ 
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .donation-info-button{
+        padding: 1rem 2rem ;
+    margin: 2rem 0;
+        width:45%;
+    }
+        .donation-line {
+            margin-top: -1rem;
+            font-size: 4.5rem;
+            text-align: center;
+            width: 50%;
+            margin-left: 3rem;
+        }
+    
+
     .main-page6-subscribe{
         flex-direction: row;
         justify-content: center;
